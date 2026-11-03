@@ -6,13 +6,13 @@
 /*   By: urastell <ugo.rastell@learner.42.tech>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 16:04:01 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/03 16:06:09 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/03 17:12:11 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_str_is_alpha(char *str)
+int	ft_isalpha(char *str)
 {
 	int	i;
 
