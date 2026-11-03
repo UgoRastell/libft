@@ -10,27 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_isprint(char *str)
+int	ft_isprint(int c)
 {
-	char	*base;
-	char	c;
-	int		i;
-
-	base = "0123456789abcdef";
-	i = 0;
-	while (str[i] != '\0')
-	{
-		c = str[i];
-		if (c >= 32 && c <= 126)
-			write(1, &c, 1);
-		else
-		{
-			write(1, "\\", 1);
-			write(1, &base[c / 16], 1);
-			write(1, &base[c % 16], 1);
-		}
-		i++;
-	}
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

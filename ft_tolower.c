@@ -10,20 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_tolower(char *str)
+int	ft_tolower(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (!(str[i] >= 97 && str[i] <= 122))
-		{
-			return (0);
-		}
-		i++;
-	}
-	return (1);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }

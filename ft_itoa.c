@@ -10,22 +10,50 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_itoa_base(int nb, char *base)
+#include <stdlib.h>
+
+static int	count_len(long nb)
+{
+	int	len;
+
+	len = 1;
+	if (nb < 0)
+	{
+		len++;
+		nb = -nb;
+	}
+	while (nb >= 10)
+	{
+		nb = nb / 10;
+		len++;
+	}
+	return (len);
+}
+
+char	*ft_itoa(int n)
 {
 	char	*result;
+	long	nb;
 	int		len;
-	int		neg;
 
-	neg = 0;
-	if (nb == 0)
-		return (zero_case(base));
-	if (nb < 0)
-		neg = 1;
-	len = count_digits(nb, base);
-	result = malloc(sizeof(char) * (len + neg + 1));
+	nb = n;
+	len = count_len(nb);
+	result = malloc(sizeof(char) * (len + 1));
 	if (!result)
 		return (NULL);
-	result[len + neg] = '\0';
-	fill_result(result, nb, base, neg);
+	result[len] = '\0';
+	if (nb < 0)
+	{
+		result[0] = '-';
+		nb = -nb;
+	}
+	if (nb == 0)
+		result[0] = '0';
+	while (nb > 0)
+	{
+		len--;
+		result[len] = nb % 10 + '0';
+		nb = nb / 10;
+	}
 	return (result);
 }
