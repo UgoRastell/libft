@@ -6,13 +6,13 @@
 /*   By: urastell <ugo.rastell@learner.42.tech>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 17:12:53 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/03 17:25:03 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/03 17:27:59 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int character)
+int	ft_isdigit(int number)
 {
-	if (c >= 0 && c <= 127)
+	if (c >= 48 && c <= 57)
 	{
 		return (0);
 	}
