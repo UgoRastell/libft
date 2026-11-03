@@ -6,7 +6,7 @@
 /*   By: urastell <ugo.rastell@learner.42.tech>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 16:13:22 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/03 16:19:17 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/03 17:06:10 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 	{
-		return (0);
+		return (1);
 	}
-	return (1);
+	return (0);
 }
