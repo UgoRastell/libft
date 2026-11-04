@@ -6,14 +6,11 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 16:37:04 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/04 14:25:18 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:03:34 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-size_t	ft_strlen(char *s);
-int		ft_isdigit(int c);
 
 #endif
