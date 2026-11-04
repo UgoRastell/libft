@@ -6,13 +6,13 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 12:27:47 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/04 12:30:30 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/04 14:16:14 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	return (c);
 }
