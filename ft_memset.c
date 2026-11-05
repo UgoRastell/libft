@@ -12,7 +12,7 @@
 
 #include <stddef.h>
 
-void	*memset(void *ptr, int value, size_t count)
+void	*ft_memset(void *ptr, int value, size_t count)
 {
 	unsigned char	*p;
 
