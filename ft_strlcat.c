@@ -6,26 +6,30 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 14:58:55 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/05 15:08:42 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/05 15:54:38 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <libft.h>
 
-size_t	strlcat(char *destination, const char *source, size_t destinationSize)
+size_t	strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned int	j;
-	int				i;
+	size_t	i;
+	size_t	tofill;
+	size_t	destlen;
+	size_t	srclen;
 
+	srclen = ft_strlen(src);
+	destlen = ft_strlen(dst);
 	i = 0;
-	j = 0;
-	while (destination[i])
-		i++;
-	while (source[j] && j < destinationSize)
+	tofill = size - destlen - 1;
+	if (destlen >= size)
+		return (size + srclen);
+	while (src[i] && tofill--)
 	{
-		destination[i + j] = source[j];
-		j++;
+		dst[destlen + i] = src[i];
+		i++;
 	}
-	destination[i + j] = '\0';
-	return (destination);
+	dst[destlen + i] = '\0';
+	return (destlen + srclen);
 }
