@@ -6,13 +6,13 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 16:44:15 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/05 16:59:13 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/05 17:06:57 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void	*memchr(const void *ptr, int ch, size_t count)
+void	*ft_memchr(const void *ptr, int ch, size_t count)
 {
 	const unsigned char	*p = ptr;
 	unsigned char		target;
