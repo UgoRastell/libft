@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -29,7 +28,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			*cdest++ = *csrc++;
 		}
 	}
-	else if (dest > src)
+	else
 	{
 		cdest += n - 1;
 		csrc += n - 1;

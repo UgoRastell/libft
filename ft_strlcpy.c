@@ -10,15 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strcpy(char *destination, const char *source)
-{
-	unsigned int	i;
+#include "libft.h"
 
-	i = 0;
-	while (source[i] != '\0')
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+{
+	size_t	i;
+
+	if (size > 0)
 	{
-		destination[i] = source[i];
-		i++;
+		i = 0;
+		while (src[i] && i < size - 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
 	}
-	return (destination);
+	return (ft_strlen(src));
 }

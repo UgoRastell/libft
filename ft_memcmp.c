@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *ptr1, const void *ptr2, size_t size)
 {
-	unsigned char	*p;
-	unsigned char	*q;
+	const unsigned char	*p;
+	const unsigned char	*q;
 
 	p = ptr1;
 	q = ptr2;
