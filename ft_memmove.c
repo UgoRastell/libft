@@ -6,10 +6,11 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 10:49:19 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/05 11:35:55 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/05 14:56:12 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
