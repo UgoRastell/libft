@@ -6,12 +6,25 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 12:35:20 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/06 12:58:58 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/06 16:52:32 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*calloc(size_t num, size_t size)
 {
+	void	*ptr;
+	size_t	i;
+
+	i = 0;
+	ptr = malloc(num * size);
+	if (ptr == NULL)
+		return (NULL);
+	while (i < (num * size))
+	{
+		(*(unsigned char *)(ptr + i)) = 0;
+		i++;
+	}
+	return (ptr);
 }
