@@ -6,7 +6,7 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/14 18:11:29 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/06 17:39:28 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/06 17:59:54 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,7 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
+	char	*res;
+	int		i;
+	int		j;
 }
