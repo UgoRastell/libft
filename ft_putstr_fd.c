@@ -6,13 +6,13 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/05 17:21:17 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/09 12:36:10 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/09 17:54:43 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char *str)
+void	ft_putstr_fd(char *str)
 {
 	int	i;
 
