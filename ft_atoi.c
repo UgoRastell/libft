@@ -6,9 +6,11 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/20 17:06:31 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/03 12:00:39 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/09 12:35:23 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {

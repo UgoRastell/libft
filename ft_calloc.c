@@ -6,13 +6,13 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 12:35:20 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/06 16:52:32 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/09 12:34:12 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t num, size_t size)
+void	*ft_calloc(size_t num, size_t size)
 {
 	void	*ptr;
 	size_t	i;

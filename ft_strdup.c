@@ -6,11 +6,11 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/14 12:46:05 by urastell          #+#    #+#             */
-/*   Updated: 2026/07/19 16:36:27 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/09 12:36:24 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(char *src)
 {
