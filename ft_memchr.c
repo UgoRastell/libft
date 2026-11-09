@@ -6,7 +6,7 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 16:44:15 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/05 17:06:57 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/09 11:29:49 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memchr(const void *ptr, int ch, size_t count)
 	unsigned char		target;
 	size_t				i;
 
-	target = (unsigned char)ch;
+	target = ch;
 	i = 0;
 	while (i < count)
 	{
