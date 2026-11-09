@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/20 16:10:39 by urastell          #+#    #+#             */
-/*   Updated: 2026/07/22 15:23:07 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/09 18:10:41 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-char	*ft_strstr(char *str, char *to_find)
+char	*ft_strnstr(char *str, char *to_find)
 {
 	int	i;
 	int	j;
