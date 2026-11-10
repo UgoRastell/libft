@@ -6,6 +6,12 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 21:09:37 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/03 21:09:40 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/10 14:59:28 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+unsigned int	ft_lstsize(t_list *lst)
+{
+}
