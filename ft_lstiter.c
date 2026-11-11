@@ -14,12 +14,11 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*tmp;
-
-	tmp = lst;
-	while (tmp)
+	if (!f)
+		return ;
+	while (lst)
 	{
-		f(tmp->content);
-		tmp = tmp->next;
+		f(lst->content);
+		lst = lst->next;
 	}
 }

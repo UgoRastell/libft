@@ -12,91 +12,71 @@
 
 #include "libft.h"
 
-static size_t	ft_count_words(char *str, char charset)
+static size_t	count_words(char const *s, char c)
 {
-	size_t	i;
-	size_t	nb;
+	size_t	count;
 
-	i = 0;
-	nb = 0;
-	while (str[i])
+	count = 0;
+	while (*s)
 	{
-		while (str[i] == charset)
-		{
-			i++;
-			if (str[i])
-				nb++;
-			while (str[i] && str[i] != charset)
-				i++;
-		}
+		while (*s == c)
+			s++;
+		if (*s)
+			count++;
+		while (*s && *s != c)
+			s++;
 	}
-	return (nb);
+	return (count);
 }
 
-static char	*ft_extract_word(const char *str, char charset)
+static void	free_all(char **arr, size_t n)
 {
+	while (n > 0)
+	{
+		n--;
+		free(arr[n]);
+	}
+	free(arr);
+}
+
+static char	*next_word(char const **s, char c)
+{
+	size_t	len;
 	char	*word;
-	int		i;
-	int		len;
 
+	while (**s == c)
+		(*s)++;
 	len = 0;
-	while (str[len] && str[len] != charset)
+	while ((*s)[len] && (*s)[len] != c)
 		len++;
-	word = malloc(sizeof(char) * (len + 1));
-	if (!word)
-		return (NULL);
-	i = 0;
-	while (i < len)
-	{
-		word[i] = str[i];
-		i++;
-	}
-	word[i] = '\0';
+	word = ft_substr(*s, 0, len);
+	*s += len;
 	return (word);
-}
-
-static char	*ft_word_into_array(const char *str, char charset, size_t i,
-		char **arr)
-{
-	if (!str)
-		return (NULL);
-	arr[i] = ft_extract_word(str, charset);
-	if (!arr[i])
-	{
-		while (i > 0)
-		{
-			i--;
-			free(arr[i]);
-		}
-		free(arr);
-		return (NULL);
-	}
-	return (arr[i]);
 }
 
 char	**ft_split(char const *s, char c)
 {
+	char	**arr;
 	size_t	nb_words;
 	size_t	i;
-	char	**word_arr;
 
 	if (!s)
 		return (NULL);
-	nb_words = ft_count_words(s, c);
-	word_arr = malloc(sizeof(char *) * (nb_words + 1));
-	if (!word_arr)
+	nb_words = count_words(s, c);
+	arr = malloc(sizeof(char *) * (nb_words + 1));
+	if (!arr)
 		return (NULL);
-	i = -1;
-	while (++i < nb_words)
+	i = 0;
+	while (i < nb_words)
 	{
-		while (*s && *s == c)
-			s++;
-		word_arr[i] = ft_word_into_array(s, c, i, word_arr);
-		if (word_arr[i] == NULL)
+		arr[i] = next_word(&s, c);
+		if (!arr[i])
+		{
+			free_all(arr, i);
 			return (NULL);
-		while (*s && *s != c)
-			s++;
+		}
+		i++;
 	}
-	word_arr[i] = NULL;
-	return (word_arr);
+	arr[i] = NULL;
+	return (arr);
 }
