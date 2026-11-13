@@ -48,8 +48,8 @@ int	main(void)
 ```
 
 ```sh
-cc -Wall -Wextra -Werror main.c -L. -lft -o demo
-./demo
+cc -Wall -Wextra -Werror main.c -L. -lft -o test
+./test
 ```
 
 ## Library description
