@@ -33,3 +33,33 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[destlen + i] = '\0';
 	return (destlen + srclen);
 }
+
+/*
+** Test rapide de ft_strlcat. Il reste en commentaire : libft.a ne doit
+** pas contenir de main. Pour l'essayer, apres un make, retire les deux
+** lignes qui ouvrent et ferment le bloc suivant, puis lance :
+**   cc -Wall -Wextra -Werror ft_strlcat.c libft.a && ./a.out
+** Remets-le en commentaire avant le prochain make.
+*/
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	buf[8];
+	size_t	r;
+
+	ft_strlcpy(buf, "abc", 8);
+	r = ft_strlcat(buf, "def", 8);
+	printf("(\"abc\", \"def\", 8)      -> %zu \"%s\"", r, buf);
+	printf("   (attendu 6 \"abcdef\")\n");
+	r = ft_strlcat(buf, "ghijk", 8);
+	printf("(\"abcdef\", \"ghijk\", 8) -> %zu \"%s\"", r, buf);
+	printf(" (attendu 11 \"abcdefg\")\n");
+	r = ft_strlcat(buf, "xyz", 2);
+	printf("(\"abcdefg\", \"xyz\", 2)  -> %zu \"%s\"", r, buf);
+	printf("  (attendu 5 \"abcdefg\")\n");
+	return (0);
+}
+*/

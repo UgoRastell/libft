@@ -37,3 +37,35 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
+
+/*
+** Test rapide de ft_substr. Il reste en commentaire : libft.a ne doit
+** pas contenir de main. Pour l'essayer, apres un make, retire les deux
+** lignes qui ouvrent et ferment le bloc suivant, puis lance :
+**   cc -Wall -Wextra -Werror ft_substr.c libft.a && ./a.out
+** Remets-le en commentaire avant le prochain make.
+*/
+
+/*
+#include <stdio.h>
+
+static void	show(const char *call, char *got, const char *want)
+{
+	if (got)
+		printf("%s -> \"%s\"  (attendu \"%s\")\n", call, got, want);
+	else
+		printf("%s -> NULL  (attendu \"%s\")\n", call, want);
+	free(got);
+}
+
+int	main(void)
+{
+	show("ft_substr(\"hello\", 1, 3)  ", ft_substr("hello", 1, 3), "ell");
+	show("ft_substr(\"hello\", 2, 100)", ft_substr("hello", 2, 100), "llo");
+	show("ft_substr(\"hello\", 5, 2)  ", ft_substr("hello", 5, 2), "");
+	show("ft_substr(\"hello\", 400, 2)", ft_substr("hello", 400, 2), "");
+	show("ft_substr(\"hello\", 0, 0)  ", ft_substr("hello", 0, 0), "");
+	show("ft_substr(\"\", 0, 5)       ", ft_substr("", 0, 5), "");
+	return (0);
+}
+*/

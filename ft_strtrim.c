@@ -29,3 +29,36 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
+
+/*
+** Test rapide de ft_strtrim. Il reste en commentaire : libft.a ne doit
+** pas contenir de main. Pour l'essayer, apres un make, retire les deux
+** lignes qui ouvrent et ferment le bloc suivant, puis lance :
+**   cc -Wall -Wextra -Werror ft_strtrim.c libft.a && ./a.out
+** Remets-le en commentaire avant le prochain make.
+*/
+
+/*
+#include <stdio.h>
+
+static void	show(const char *call, char *got, const char *want)
+{
+	if (got)
+		printf("%s -> \"%s\"  (attendu \"%s\")\n", call, got, want);
+	else
+		printf("%s -> NULL  (attendu \"%s\")\n", call, want);
+	free(got);
+}
+
+int	main(void)
+{
+	show("ft_strtrim(\"  xxhixx \", \" x\")", ft_strtrim("  xxhixx ", " x"),
+		"hi");
+	show("ft_strtrim(\"xxxx\", \"x\")      ", ft_strtrim("xxxx", "x"), "");
+	show("ft_strtrim(\"\", \"x\")          ", ft_strtrim("", "x"), "");
+	show("ft_strtrim(\"abc\", \"\")        ", ft_strtrim("abc", ""), "abc");
+	show("ft_strtrim(\"a-b-a\", \"a\")     ", ft_strtrim("a-b-a", "a"),
+		"-b-");
+	return (0);
+}
+*/

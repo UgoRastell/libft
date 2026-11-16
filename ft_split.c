@@ -116,3 +116,47 @@ char	**ft_split(char const *s, char c)
 	}
 	return (arr);
 }
+
+/*
+** Test rapide de ft_split. Il reste en commentaire : libft.a ne doit
+** pas contenir de main. Pour l'essayer, apres un make, retire les deux
+** lignes qui ouvrent et ferment le bloc suivant, puis lance :
+**   cc -Wall -Wextra -Werror ft_split.c libft.a && ./a.out
+** Remets-le en commentaire avant le prochain make.
+*/
+
+/*
+#include <stdio.h>
+
+static void	show(const char *call, char **tab, const char *want)
+{
+	size_t	i;
+
+	printf("%s -> {", call);
+	i = 0;
+	while (tab && tab[i])
+	{
+		printf("\"%s\", ", tab[i]);
+		free(tab[i]);
+		i++;
+	}
+	printf("NULL}  (attendu %s)\n", want);
+	free(tab);
+}
+
+int	main(void)
+{
+	show("ft_split(\"  hello world  42 \", ' ')",
+		ft_split("  hello world  42 ", ' '),
+		"{\"hello\", \"world\", \"42\", NULL}");
+	show("ft_split(\"hello\", ' ')", ft_split("hello", ' '),
+		"{\"hello\", NULL}");
+	show("ft_split(\"\", ' ')", ft_split("", ' '), "{NULL}");
+	show("ft_split(\",,,,\", ',')", ft_split(",,,,", ','), "{NULL}");
+	show("ft_split(\"a,b,,c,\", ',')", ft_split("a,b,,c,", ','),
+		"{\"a\", \"b\", \"c\", NULL}");
+	show("ft_split(\"a b\", '\\0')", ft_split("a b", '\0'),
+		"{\"a b\", NULL}");
+	return (0);
+}
+*/

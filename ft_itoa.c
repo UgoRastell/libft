@@ -57,3 +57,35 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
+
+/*
+** Test rapide de ft_itoa. Il reste en commentaire : libft.a ne doit
+** pas contenir de main. Pour l'essayer, apres un make, retire les deux
+** lignes qui ouvrent et ferment le bloc suivant, puis lance :
+**   cc -Wall -Wextra -Werror ft_itoa.c libft.a && ./a.out
+** Remets-le en commentaire avant le prochain make.
+*/
+
+/*
+#include <stdio.h>
+#include <limits.h>
+
+static void	show(const char *call, char *got, const char *want)
+{
+	if (got)
+		printf("%s -> \"%s\"  (attendu \"%s\")\n", call, got, want);
+	else
+		printf("%s -> NULL  (attendu \"%s\")\n", call, want);
+	free(got);
+}
+
+int	main(void)
+{
+	show("ft_itoa(0)      ", ft_itoa(0), "0");
+	show("ft_itoa(7)      ", ft_itoa(7), "7");
+	show("ft_itoa(-42)    ", ft_itoa(-42), "-42");
+	show("ft_itoa(INT_MAX)", ft_itoa(INT_MAX), "2147483647");
+	show("ft_itoa(INT_MIN)", ft_itoa(INT_MIN), "-2147483648");
+	return (0);
+}
+*/
