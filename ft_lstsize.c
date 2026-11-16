@@ -6,7 +6,7 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 21:09:37 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/10 15:14:55 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/16 15:59:33 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,6 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
-
-/*
-** Test rapide de ft_lstsize. Il reste en commentaire : libft.a ne doit
-** pas contenir de main. Pour l'essayer, apres un make, retire les deux
-** lignes qui ouvrent et ferment le bloc suivant, puis lance :
-**   cc -Wall -Wextra -Werror ft_lstsize.c libft.a && ./a.out
-** Remets-le en commentaire avant le prochain make.
-*/
 
 /*
 #include <stdio.h>

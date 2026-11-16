@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: urastell <ugo.rastell@learner.42.tech>     +#+  +:+       +#+        */
+/*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:07:43 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/03 15:21:12 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/16 15:59:10 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,6 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-/*
-** Test rapide de ft_bzero. Il reste en commentaire : libft.a ne doit
-** pas contenir de main. Pour l'essayer, apres un make, retire les deux
-** lignes qui ouvrent et ferment le bloc suivant, puis lance :
-**   cc -Wall -Wextra -Werror ft_bzero.c libft.a && ./a.out
-** Remets-le en commentaire avant le prochain make.
-*/
 
 /*
 #include <stdio.h>
