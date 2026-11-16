@@ -120,7 +120,8 @@ typedef struct s_list
 - [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language) — Kernighan & Ritchie
 - [cppreference — C standard library](https://en.cppreference.com/w/c)
 - The 42 Norm (norminette)
+- [42-cursus](https://42-cursus.gitbook.io/guide)
 
 ### Use of AI
 
-<!-- TODO -->
+Gemini with google
