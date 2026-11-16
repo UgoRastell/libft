@@ -6,7 +6,7 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 17:12:52 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/10 17:13:20 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/16 15:57:13 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-
-/*
-** Test rapide de ft_lstmap. Il reste en commentaire : libft.a ne doit
-** pas contenir de main. Pour l'essayer, apres un make, retire les deux
-** lignes qui ouvrent et ferment le bloc suivant, puis lance :
-**   cc -Wall -Wextra -Werror ft_lstmap.c libft.a && ./a.out
-** Remets-le en commentaire avant le prochain make.
-*/
 
 /*
 #include <stdio.h>

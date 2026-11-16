@@ -6,7 +6,7 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 16:44:15 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/09 11:29:49 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/16 15:57:13 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,6 @@ void	*ft_memchr(const void *ptr, int ch, size_t count)
 	}
 	return (NULL);
 }
-
-/*
-** Test rapide de ft_memchr. Il reste en commentaire : libft.a ne doit
-** pas contenir de main. Pour l'essayer, apres un make, retire les deux
-** lignes qui ouvrent et ferment le bloc suivant, puis lance :
-**   cc -Wall -Wextra -Werror ft_memchr.c libft.a && ./a.out
-** Remets-le en commentaire avant le prochain make.
-*/
 
 /*
 #include <stdio.h>

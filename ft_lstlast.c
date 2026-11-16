@@ -6,7 +6,7 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 15:23:24 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/10 15:28:18 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/16 15:57:13 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,6 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
-
-/*
-** Test rapide de ft_lstlast. Il reste en commentaire : libft.a ne doit
-** pas contenir de main. Pour l'essayer, apres un make, retire les deux
-** lignes qui ouvrent et ferment le bloc suivant, puis lance :
-**   cc -Wall -Wextra -Werror ft_lstlast.c libft.a && ./a.out
-** Remets-le en commentaire avant le prochain make.
-*/
 
 /*
 #include <stdio.h>
