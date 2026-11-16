@@ -5,9 +5,7 @@
 ## Description
 
 **libft** is the first project of the 42 Common Core. The goal is to rewrite a
-set of functions from the C standard library, plus some extra utilities, and to
-gather them into a static library, `libft.a`, that will be reused in the
-following projects.
+set of functions from the C standard library and to gather them into a static library, `libft.a`, that will be reused in the following projects.
 
 Writing these functions by hand is a way to understand how memory, strings,
 pointers and dynamic allocation really work, instead of using them as black
