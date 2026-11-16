@@ -27,10 +27,10 @@ int	main(void)
 {
 	int	c;
 
-	printf("ft_tolower('A') = %d  (attendu 'a' = 97)\n", ft_tolower('A'));
-	printf("ft_tolower('z') = %d  (attendu 'z' = 122)\n", ft_tolower('z'));
-	printf("ft_tolower('5') = %d  (attendu '5' = 53)\n", ft_tolower('5'));
-	printf("ft_tolower(-1) = %d  (attendu -1)\n", ft_tolower(-1));
+	printf("ft_tolower('A') -> '%c'  (attendu 'a')\n", ft_tolower('A'));
+	printf("ft_tolower('z') -> '%c'  (attendu 'z')\n", ft_tolower('z'));
+	printf("ft_tolower('5') -> '%c'  (attendu '5')\n", ft_tolower('5'));
+	printf("ft_tolower(-1)  -> %d   (attendu -1)\n", ft_tolower(-1));
 	c = -1;
 	while (c <= 255)
 	{

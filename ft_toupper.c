@@ -27,10 +27,10 @@ int	main(void)
 {
 	int	c;
 
-	printf("ft_toupper('a') = %d  (attendu 'A' = 65)\n", ft_toupper('a'));
-	printf("ft_toupper('Z') = %d  (attendu 'Z' = 90)\n", ft_toupper('Z'));
-	printf("ft_toupper('5') = %d  (attendu '5' = 53)\n", ft_toupper('5'));
-	printf("ft_toupper(-1) = %d  (attendu -1)\n", ft_toupper(-1));
+	printf("ft_toupper('a') -> '%c'  (attendu 'A')\n", ft_toupper('a'));
+	printf("ft_toupper('Z') -> '%c'  (attendu 'Z')\n", ft_toupper('Z'));
+	printf("ft_toupper('5') -> '%c'  (attendu '5')\n", ft_toupper('5'));
+	printf("ft_toupper(-1)  -> %d   (attendu -1)\n", ft_toupper(-1));
 	c = -1;
 	while (c <= 255)
 	{
