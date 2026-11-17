@@ -6,7 +6,7 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 17:51:10 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/16 15:57:13 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/17 11:54:59 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	main(void)
 			printf("KO pour c = %d\n", c);
 		c++;
 	}
-	printf("Comparaison avec tolower de -1 a 255 : terminee\n");
+	printf("Comparaison avec tolower de -1 a 255 : termine\n");
 	return (0);
 }
 */
