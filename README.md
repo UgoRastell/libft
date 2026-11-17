@@ -117,14 +117,10 @@ typedef struct s_list
 ## Resources
 
 - Linux manual pages: `man 3 strlcpy`, `man 3 memmove`, `man 3 atoi`, `man 3 malloc`, …
-- [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language) — Kernighan & Ritchie
-- [cppreference — C standard library](https://en.cppreference.com/w/c)
 - The 42 Norm (norminette)
 - [42-cursus](https://42-cursus.gitbook.io/guide)
 
 ### Use of AI
 
 - **Gemini (Google search)**: quick explanations of C concepts and edge cases.
-- **Claude**: concept explanations, code review of my commits, and the
-  commented test `main` at the end of each `ft_*.c`.
 - **README**: AI helped with the wording.
