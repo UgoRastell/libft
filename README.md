@@ -124,4 +124,7 @@ typedef struct s_list
 
 ### Use of AI
 
-Gemini with google
+- **Gemini (Google search)**: quick explanations of C concepts and edge cases.
+- **Claude**: concept explanations, code review of my commits, and the
+  commented test `main` at the end of each `ft_*.c`.
+- **README**: AI helped with the wording.
