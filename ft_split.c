@@ -6,21 +6,12 @@
 /*   By: urastell <urastell@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/16 11:46:34 by urastell          #+#    #+#             */
-/*   Updated: 2026/11/16 15:57:13 by urastell         ###   ########.fr       */
+/*   Updated: 2026/11/17 13:02:07 by urastell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-** count_words : compte les mots de s.
-** Un mot est une suite de caracteres differents de c.
-** On parcourt s avec i, et on compte chaque DEBUT de mot :
-**   - s[i] != c           -> on est sur un caractere d'un mot ;
-**   - i == 0              -> c'est le tout debut de la chaine,
-**   - ou s[i - 1] == c    -> le caractere d'avant etait un separateur.
-** Exemple : "  ab  cd " avec ' ' -> debuts en 'a' et 'c' -> 2 mots.
-*/
 static size_t	count_words(char const *s, char c)
 {
 	size_t	count;
@@ -37,13 +28,6 @@ static size_t	count_words(char const *s, char c)
 	return (count);
 }
 
-/*
-** free_all : appelee quand un malloc (ft_substr) echoue au milieu.
-** Les cases pas encore remplies valent NULL (grace a ft_calloc),
-** donc on libere les mots un par un jusqu'au premier NULL,
-** puis le tableau lui-meme.
-** Elle renvoie NULL pour pouvoir ecrire : return (free_all(arr));
-*/
 static char	**free_all(char **arr)
 {
 	size_t	i;
@@ -58,11 +42,6 @@ static char	**free_all(char **arr)
 	return (NULL);
 }
 
-/*
-** word_len : longueur du mot qui commence en s.
-** On avance tant qu'on n'est ni a la fin ('\0') ni sur un separateur c.
-** Exemple : word_len("cd ef", ' ') -> 2.
-*/
 static size_t	word_len(char const *s, char c)
 {
 	size_t	len;
@@ -73,22 +52,6 @@ static size_t	word_len(char const *s, char c)
 	return (len);
 }
 
-/*
-** ft_split : decoupe s en mots separes par c.
-** Renvoie un tableau de chaines termine par NULL, ou NULL si erreur.
-**
-** 1. Si s est NULL, on renvoie NULL.
-** 2. On compte les mots (nb_words) pour savoir quelle taille allouer.
-** 3. ft_calloc alloue nb_words + 1 cases, toutes a NULL :
-**    la case en plus est le NULL final, deja en place.
-** 4. Pour chaque mot (w = numero du mot, i = position dans s) :
-**    - on saute les separateurs c ;
-**    - ft_substr copie le mot qui commence en i (longueur word_len) ;
-**    - si la copie echoue, free_all libere tout et on renvoie NULL ;
-**    - on avance i juste apres le mot (i += longueur du mot copie).
-**
-** Exemple : ft_split("  ab  cd ", ' ') -> {"ab", "cd", NULL}
-*/
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
